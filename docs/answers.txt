@@ -1,0 +1,81 @@
+CEN4020 Assignment #3 - Git and Object-Oriented Programming
+Name: Connor Everhart
+FSUID: cwh24c
+
+Git Lab Tutorials Completion Date: October 15, 2026
+GitHub Account Creation Date: September 5, 2023
+
+Question 1: Paste the console output saved after pushing docs/status.txt.
+
+PS C:\Users\everh\assignment2> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 465 bytes | 465.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CnnrE/assignment2.git
+   e21e06d..1a19a07  master -> master
+
+Question 2: How many commits have been made to the repository?
+
+There have been 9 commits made to the repository so far.
+
+Command used: git rev-list --count --all
+
+Question 3: When was README.md last modified?
+
+README.md was last modified on October 14, 2026, at 4:07 PM.
+
+Command used: git log -1 -- README.md
+
+Question 4: Mention two reasons why branches are used in a Git repository.
+
+1. Branches allow developers to work on new features or bug fixes without affecting 
+the main version of the project.
+
+2. Branches allow multiple developers to work on different parts of a project at the
+same time and merge their changes when they are ready.
+
+Question 5: What is the difference between git log and git status?
+
+The git log command displays the history of commits in a repository.
+
+The git status command shows the current state of the working directory.
+
+Question 6: What command would you use to see the commits where "Vehicle.h" was one of the committed files?
+
+Command used: git log -- Vehicle.h
+
+This command displays the commit history for Vehicle.h. The results show that the file was modified in 4 commits.
+
+Question 7: What command would you use to see commits whose commit message contains the word "file"?
+
+Command used: git log --grep="file"
+
+This command searches the repository's commit history and displays commits whose messages contain the word "file".
+
+Question 8: Explain inheritance, polymorphism, and encapsulation.
+
+I. Inheritance:
+Inheritance allows a class to inherit properties and methods from another class. This helps reuse code and avoid duplication.
+
+II. Polymorphism:
+Polymorphism allows objects of different classes to be treated through a common interface while performing different behaviors.
+For example, different classes can implement the same method in different ways.
+
+III. Encapsulation:
+Encapsulation means keeping data and the methods that work with it together in a class while restricting direct access to certain data.
+This helps protect data and control how it is modified.
+
+Question 9: What is the main difference between the Dictator and Lieutenants workflow and the Integration Manager workflow?
+
+In the Integration Manager workflow, one manager handles merging everyone's changes. In the Dictator and Lieutenants workflow,
+lieutenants merge changes from smaller groups of developers before passing them to the dictator, who handles the final merge.
+
+Question 10: How would a team of 100 developers benefit from the Dictator and Lieutenants workflow instead of the Centralized workflow?
+
+The Dictator and Lieutenants workflow would make managing 100 developers easier by dividing the work into smaller groups.
+Lieutenants can handle changes and conflicts within their groups, reducing the workload on the dictator.
+This makes development more organized than having everyone work directly with one shared repository.
